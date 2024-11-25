@@ -1,0 +1,36 @@
+<nav class="navbar">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+  <div class="navbar">
+    <i class="bx bx-menu" (click)="openNav()"></i>
+
+    <div class="logo">
+      <a routerLink="/course">CodeForge</a>
+    </div>
+
+    <div class="nav-links" [ngClass]="{'nav-open': isNavOpen}">
+      <i class="bx bx-x" (click)="closeNav()"></i>
+      <ul class="links">
+        <li><a routerLink="/admin-dashboard" routerLinkActive="active" *ngIf="isAdmin()">Admin-dashboard</a></li>
+        <li><a routerLink="/home" routerLinkActive="active" *ngIf="isLoggedIn">Home</a></li>
+        <li><a routerLink="/course" routerLinkActive="active" *ngIf="isLoggedIn">Market</a></li>
+        <li><a (click)="logout()" *ngIf="isLoggedIn">Logout</a></li>
+      </ul>
+    </div>
+
+    <div class="search-box">
+      <div class="search-icon" (click)="toggleSearch()">
+        <i class="fa" [ngClass]="searchIconClass"></i>
+      </div>
+      @if(isSearchOpen){
+      <div>
+        <input type="text" class="input" placeholder="Search by course name" [(ngModel)]="searchService.searchTerm" (ngModelChange)="onSearchTermChange($event)">
+        <input type="number" class="input" placeholder="Min Price" [(ngModel)]="searchService.minPrice" (ngModelChange)="onMinPriceChange($event)">
+        <input type="number" class="input" placeholder="Max Price" [(ngModel)]="searchService.maxPrice" (ngModelChange)="onMaxPriceChange($event)">
+      </div>
+    }
+    </div>
+  </div>
+</nav>

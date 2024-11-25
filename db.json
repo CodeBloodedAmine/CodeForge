@@ -1,0 +1,544 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "name": "Introduction to JavaScript",
+      "image": "javascript-course.jpeg",
+      "price": 99.99,
+      "isPopular": true,
+      "startDate": "2023-01-10",
+      "modules": [
+        "Basics",
+        "DOM Manipulation",
+        "ES6",
+        "Async Programming"
+      ],
+      "category": "Programming",
+      "description": "Learn the fundamentals of JavaScript, the popular programming language of the web.",
+      "reviews": [
+        {
+          "user": "Alice",
+          "comment": "Great course!"
+        },
+        {
+          "user": "John",
+          "comment": "Well structured and informative."
+        },
+        {
+          "user": "Ahmed",
+          "comment": "very nice course , helpful , straight to point"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Advanced CSS and Sass",
+      "image": "css.jpeg",
+      "price": 49,
+      "isPopular": false,
+      "startDate": "2023-02-15",
+      "modules": [
+        "Flexbox",
+        "Grid",
+        "Animations",
+        "Sass Basics"
+      ],
+      "category": "Web Development",
+      "description": "Master CSS for responsive and creative layouts, including Sass for faster styling.",
+      "reviews": [
+        {
+          "user": "Bob",
+          "comment": "Very informative!"
+        },
+        {
+          "user": "Emma",
+          "comment": "A bit challenging but rewarding!"
+        },
+        {
+          "user": "Amine",
+          "comment": "loved how short and easy this was , definitely a 5 star review"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Machine Learning with Python",
+      "image": "machine.jpeg",
+      "price": 149.99,
+      "isPopular": true,
+      "startDate": "2023-03-20",
+      "modules": [
+        "Data Preprocessing",
+        "Supervised Learning",
+        "Neural Networks",
+        "Model Evaluation"
+      ],
+      "category": "Data Science",
+      "description": "Learn how to apply machine learning algorithms with Python and its powerful libraries.",
+      "reviews": [
+        {
+          "user": "Sophia",
+          "comment": "Amazing course for ML beginners."
+        },
+        {
+          "user": "Lucas",
+          "comment": "The hands-on projects are the best!"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Web Development Bootcamp",
+      "image": "boot.jpeg",
+      "price": 199.99,
+      "isPopular": true,
+      "startDate": "2023-04-05",
+      "modules": [
+        "HTML & CSS",
+        "JavaScript",
+        "Node.js",
+        "React"
+      ],
+      "category": "Web Development",
+      "description": "Become a full-stack web developer with this comprehensive bootcamp.",
+      "reviews": [
+        {
+          "user": "David",
+          "comment": "I learned a lot in a short period!"
+        },
+        {
+          "user": "Olivia",
+          "comment": "Excellent course, I highly recommend it!"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Data Visualization with D3.js",
+      "image": "jsd3.jpeg",
+      "price": 120,
+      "isPopular": false,
+      "startDate": "0002-05-17",
+      "modules": [
+        "SVG Basics",
+        "Bar Charts",
+        "Interactive Visuals",
+        "Geospatial Data"
+      ],
+      "category": "Data Science",
+      "description": "Master D3.js and create stunning interactive visualizations for the web.",
+      "reviews": [
+        {
+          "user": "James",
+          "comment": "Complex but rewarding."
+        },
+        {
+          "user": "Ava",
+          "comment": "Loved the visual storytelling aspect."
+        },
+        {
+          "user": "Adam",
+          "comment": "way too expensive ! had this course in w3schools for only 50$ !"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Introduction to Swift Programming",
+      "image": "swift.jpeg",
+      "price": 129.99,
+      "isPopular": true,
+      "startDate": "2023-06-12",
+      "modules": [
+        "Variables & Constants",
+        "Control Flow",
+        "Object-Oriented Programming",
+        "UI Design"
+      ],
+      "category": "Mobile Development",
+      "description": "Learn the basics of Swift programming and start building iOS applications.",
+      "reviews": [
+        {
+          "user": "Ethan",
+          "comment": "Perfect for beginners!"
+        },
+        {
+          "user": "Isabella",
+          "comment": "A great way to start iOS development."
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Introduction to HTML & CSS",
+      "image": "htcs.jpeg",
+      "price": 49.99,
+      "isPopular": false,
+      "startDate": "2023-07-01",
+      "modules": [
+        "Basic HTML",
+        "CSS Styling",
+        "Responsive Design",
+        "Flexbox & Grid"
+      ],
+      "category": "Web Development",
+      "description": "Learn the fundamental skills to build your first website with HTML and CSS.",
+      "reviews": [
+        {
+          "user": "Mia",
+          "comment": "Great introductory course!"
+        },
+        {
+          "user": "Noah",
+          "comment": "This course helped me get started with web design."
+        },
+        {
+          "user": "Sarah",
+          "comment": "lovely course ,enriching and educating !"
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Full-Stack JavaScript with Node.js and React",
+      "image": "node.jpeg",
+      "price": 179.99,
+      "isPopular": true,
+      "startDate": "2023-08-10",
+      "modules": [
+        "Node.js Basics",
+        "Express.js",
+        "React Fundamentals",
+        "MongoDB Integration"
+      ],
+      "category": "Programming",
+      "description": "Learn full-stack JavaScript development with modern tools like Node.js, React, and MongoDB.",
+      "reviews": [
+        {
+          "user": "Jack",
+          "comment": "Excellent course for full-stack developers!"
+        },
+        {
+          "user": "Charlotte",
+          "comment": "Hands-on and practical, loved it."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Android Development with Kotlin",
+      "image": "kotdroid.jpeg",
+      "price": 149.99,
+      "isPopular": true,
+      "startDate": "2023-09-15",
+      "modules": [
+        "Kotlin Basics",
+        "UI Design",
+        "Networking",
+        "Database Integration"
+      ],
+      "category": "Mobile Development",
+      "description": "Build Android apps using Kotlin, one of the most popular mobile development languages.",
+      "reviews": [
+        {
+          "user": "Liam",
+          "comment": "Great intro to Kotlin!"
+        },
+        {
+          "user": "Amelia",
+          "comment": "Clear instructions and great examples."
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Python for Data Science",
+      "image": "pydata.jpeg",
+      "price": 139.99,
+      "isPopular": true,
+      "startDate": "2023-10-05",
+      "modules": [
+        "Data Structures",
+        "NumPy & Pandas",
+        "Data Analysis",
+        "Data Visualization"
+      ],
+      "category": "Data Science",
+      "description": "Learn Python for data science and master essential libraries like NumPy, Pandas, and Matplotlib.",
+      "reviews": [
+        {
+          "user": "Zoe",
+          "comment": "A fantastic course for data enthusiasts!"
+        },
+        {
+          "user": "Alexander",
+          "comment": "Covered all the important concepts and tools."
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "name": "React Native for Mobile Apps",
+      "image": "react.jpeg",
+      "price": 149.99,
+      "isPopular": false,
+      "startDate": "2023-11-15",
+      "modules": [
+        "React Basics",
+        "Mobile Components",
+        "Navigation",
+        "API Integration"
+      ],
+      "category": "Mobile Development",
+      "description": "Learn how to create native mobile apps for iOS and Android using React Native.",
+      "reviews": [
+        {
+          "user": "Mason",
+          "comment": "Very practical and useful!"
+        },
+        {
+          "user": "Chloe",
+          "comment": "Love the hands-on approach."
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "name": "Intro to UI/UX Design",
+      "image": "uiux.jpeg",
+      "price": 99.99,
+      "isPopular": false,
+      "startDate": "2023-12-01",
+      "modules": [
+        "Design Principles",
+        "Wireframing",
+        "Prototyping",
+        "User Testing"
+      ],
+      "category": "Design",
+      "description": "Learn the basics of UI/UX design and how to create user-centered designs.",
+      "reviews": [
+        {
+          "user": "Harper",
+          "comment": "Great starting point for design!"
+        },
+        {
+          "user": "Eli",
+          "comment": "Perfect for those new to UI/UX design."
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "name": "Introduction to Cloud Computing",
+      "image": "clom.jpeg",
+      "price": 119.99,
+      "isPopular": true,
+      "startDate": "2024-01-10",
+      "modules": [
+        "Cloud Services",
+        "AWS Basics",
+        "Cloud Storage",
+        "Cloud Security"
+      ],
+      "category": "Cloud Computing",
+      "description": "Learn about cloud computing services, including AWS, Azure, and Google Cloud.",
+      "reviews": [
+        {
+          "user": "Benjamin",
+          "comment": "Excellent course with a lot of practical examples."
+        },
+        {
+          "user": "Ella",
+          "comment": "A must-learn course for IT professionals."
+        },
+        {
+          "user": "Cherif Rais",
+          "comment": "good course , could've been better"
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "name": "Introduction to Data Engineering",
+      "image": "dataeng.jpeg",
+      "price": 159.99,
+      "isPopular": true,
+      "startDate": "2024-02-15",
+      "modules": [
+        "Data Pipeline Basics",
+        "ETL Processes",
+        "Data Warehousing",
+        "Cloud Integration"
+      ],
+      "category": "Data Engineering",
+      "description": "Learn how to design and implement data pipelines and work with cloud technologies.",
+      "reviews": [
+        {
+          "user": "Ryan",
+          "comment": "Great for aspiring data engineers!"
+        },
+        {
+          "user": "Amos",
+          "comment": "A comprehensive look at data engineering."
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "name": "Cybersecurity Fundamentals",
+      "image": "cyber.jpeg",
+      "price": 139.99,
+      "isPopular": true,
+      "startDate": "2024-03-20",
+      "modules": [
+        "Network Security",
+        "Malware Analysis",
+        "Encryption",
+        "Risk Management"
+      ],
+      "category": "Cybersecurity",
+      "description": "Learn the core concepts of cybersecurity and how to secure networks and systems.",
+      "reviews": [
+        {
+          "user": "Carter",
+          "comment": "A solid introduction to cybersecurity."
+        },
+        {
+          "user": "Scarlett",
+          "comment": "A must-take for anyone interested in cybersecurity."
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "name": "Game Development with Unity",
+      "image": "unity.jpeg",
+      "price": 179.99,
+      "isPopular": false,
+      "startDate": "2024-04-15",
+      "modules": [
+        "Unity Basics",
+        "3D Game Design",
+        "Physics Simulation",
+        "AI in Games"
+      ],
+      "category": "Game Development",
+      "description": "Learn game development using Unity and create your own 3D games from scratch.",
+      "reviews": [
+        {
+          "user": "Jaden",
+          "comment": "Fantastic for game development beginners."
+        },
+        {
+          "user": "Zara",
+          "comment": "The hands-on projects were really fun."
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "name": "Blockchain Fundamentals",
+      "image": "block.jpeg",
+      "price": 199.99,
+      "isPopular": true,
+      "startDate": "2024-05-01",
+      "modules": [
+        "Blockchain Basics",
+        "Smart Contracts",
+        "Cryptocurrency",
+        "Decentralized Applications"
+      ],
+      "category": "Blockchain",
+      "description": "Understand the basics of blockchain technology and how to build decentralized applications.",
+      "reviews": [
+        {
+          "user": "Leo",
+          "comment": "Amazing course for anyone wanting to understand blockchain."
+        },
+        {
+          "user": "Olivia",
+          "comment": "I learned so much in a short time!"
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "name": "Intro to Artificial Intelligence",
+      "image": "aiinto.jpeg",
+      "price": 159.99,
+      "isPopular": true,
+      "startDate": "2024-06-12",
+      "modules": [
+        "AI Basics",
+        "Machine Learning",
+        "Neural Networks",
+        "Deep Learning"
+      ],
+      "category": "AI",
+      "description": "An introduction to artificial intelligence and its applications in various fields.",
+      "reviews": [
+        {
+          "user": "Maya",
+          "comment": "Great for AI enthusiasts."
+        },
+        {
+          "user": "Miles",
+          "comment": "Comprehensive overview of AI."
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "name": "DevOps Essentials",
+      "image": "devops.jpeg",
+      "price": 129.99,
+      "isPopular": true,
+      "startDate": "2024-07-20",
+      "modules": [
+        "CI/CD Pipelines",
+        "Infrastructure as Code",
+        "Monitoring",
+        "Containerization"
+      ],
+      "category": "DevOps",
+      "description": "Learn DevOps practices and tools like Docker, Kubernetes, and Jenkins.",
+      "reviews": [
+        {
+          "user": "Ella",
+          "comment": "A must-learn for modern developers."
+        },
+        {
+          "user": "Henry",
+          "comment": "Great practical approach to DevOps."
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "name": "Introduction to Data Science with R",
+      "image": "R.jpeg",
+      "price": 200,
+      "isPopular": false,
+      "startDate": "2024-08-10",
+      "modules": [
+        "R Basics",
+        "Data Wrangling",
+        "Statistical Analysis",
+        "Data Visualization"
+      ],
+      "category": "Data Science",
+      "description": "Learn data science with R, one of the most popular tools for data analysis and visualization.",
+      "reviews": [
+        {
+          "user": "Aria",
+          "comment": "Great course to start with R!"
+        },
+        {
+          "user": "Liam",
+          "comment": "The data analysis module was very helpful."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+<div class="admin-dashboard">
+    <h2>Admin Dashboard</h2>
+  
+    <div class="course-list">
+      @for(course of courses ; track $index){
+      <mat-card class="course-card">
+        <mat-card-header>
+          <mat-card-title>{{ course.name }}</mat-card-title>
+          <mat-card-subtitle>{{ course.category }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p class="price"><strong>Price:</strong> {{ course.price | currency }}</p>
+          <img [src]="course.image" alt="{{ course.name }}" />
+          <p><strong>Popular:</strong> {{ course.isPopular ? 'Yes' : 'No' }}</p>
+          <p><strong>Start Date:</strong> {{ course.startDate | date }}</p>
+          <p><strong>Modules:</strong> {{ course.modules.join(', ') }}</p>
+        </mat-card-content>
+        <mat-divider></mat-divider>
+        <mat-card-actions align="end">
+          <button mat-raised-button color="accent" (click)="startEditing(course)">
+            <mat-icon>edit</mat-icon> Edit
+          </button>
+          <button mat-raised-button color="warn" (click)="deleteCourse(course.id)">
+            <mat-icon>delete</mat-icon> Delete
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    }
+    </div>
+    @if(editingCourse){
+    <mat-card class="edit-course-card">
+      <mat-card-header>
+        <mat-card-title>Edit Course</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form (ngSubmit)="editingCourse && onUpdateCourse(editingCourse)">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Name</mat-label>
+            <input matInput [(ngModel)]="editingCourse.name" name="name" required />
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Price</mat-label>
+            <input matInput type="number" [(ngModel)]="editingCourse.price" name="price" required />
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Category</mat-label>
+            <input matInput [(ngModel)]="editingCourse.category" name="category" />
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Image URL</mat-label>
+            <input matInput [(ngModel)]="editingCourse.image" name="image" />
+          </mat-form-field>
+  
+          <mat-checkbox [(ngModel)]="editingCourse.isPopular" name="isPopular">
+            Popular Course
+          </mat-checkbox>
+  
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Start Date</mat-label>
+            <input matInput [(ngModel)]="editingCourse.startDate" name="startDate" type="date" />
+          </mat-form-field>
+  
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Modules (Comma-Separated)</mat-label>
+            <input matInput [(ngModel)]="editingCourse.modules" name="modules" placeholder="e.g. Module1, Module2" />
+          </mat-form-field>
+  
+          <mat-card-actions align="end">
+            <button mat-raised-button color="primary" type="submit">Save Changes</button>
+            <button mat-stroked-button type="button" (click)="cancelEditing()">Cancel</button>
+          </mat-card-actions>
+        </form>
+      </mat-card-content>
+    </mat-card>
+    }
+  

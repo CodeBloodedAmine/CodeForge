@@ -1,0 +1,43 @@
+<div class="login-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Welcome Back</mat-card-title>
+      <mat-card-subtitle>Please log in to your account</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email" type="email" required />
+          <mat-icon matSuffix>email</mat-icon>
+          @if(loginForm.get('email')?.hasError('required')){
+          <mat-error>Email is required</mat-error>
+          }
+        @if(loginForm.get('email')?.hasError('email')){
+        <mat-error>Enter a valid email</mat-error>
+        }
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput formControlName="password" type="password" required />
+          <mat-icon matSuffix>lock</mat-icon>
+          @if(loginForm.get('password')?.hasError('required')){
+          <mat-error>Password is required</mat-error>
+          }
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">
+          Login
+        </button>
+      </form>
+    </mat-card-content>
+
+    <mat-card-actions align="end">
+      <p>Don't have an account?</p>
+      <button mat-button color="accent" (click)="redirectToSignup()">Create an account</button>
+
+    
+      <p><a mat-button (click)="onForgotPassword()">Forgot Password?</a></p>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,62 @@
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: seashell;
+  }
+  
+  mat-card {
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  mat-card-header {
+    text-align: center;
+  }
+  
+  mat-card-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  mat-card-subtitle {
+    font-size: 14px;
+    color: #666666;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    width: 100%;
+  }
+  
+  mat-card-actions {
+    justify-content: flex-end;
+  }
+  ::ng-deep .mat-input-element {
+    color: red; 
+  }
+  
+  ::ng-deep .mat-form-field-label {
+    color: #666666; 
+  }
+  
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: #aaaaaa; 
+  }
+  
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-thick {
+    color: #3f51b5; 
+  }
+  
+  ::ng-deep .mat-form-field-placeholder {
+    color: #999999;
+  }
+    

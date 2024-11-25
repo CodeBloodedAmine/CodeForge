@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "id": "0a1c",
+      "email": "aminetarhouni01@gmail.com",
+      "password": "Amine123?",
+      "name": "amine tarhouni",
+      "role": "admin"
+    },
+    {
+      "id": "c749",
+      "email": "kamel@gmail.com",
+      "password": "12345678A?",
+      "name": "amine",
+      "role": "user"
+    },
+    {
+      "id": "39fa",
+      "email": "Ahmed@gmail.com",
+      "password": "Ahmed123?",
+      "name": "Ahmed",
+      "role": "user"
+    },
+    {
+      "id": "ddc2",
+      "email": "mariem@gmail.com",
+      "password": "Mariouma123?",
+      "name": "Mariem",
+      "role": "user"
+    },
+    {
+      "id": "0377",
+      "email": "cherif123@gmail.com",
+      "password": "Rais123?",
+      "name": "Cherif Rais",
+      "role": "user"
+    },
+    {
+      "id": "2b2c",
+      "email": "zeineb01@gmail.com",
+      "password": "Zeineb01?",
+      "name": "Zeineb"
+    }
+  ]
+}
